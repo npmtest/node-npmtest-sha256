@@ -1,6 +1,6 @@
 # npmtest-sha256
 
-#### basic test coverage for  sha256 (v0.2.0)  [![npm package](https://img.shields.io/npm/v/npmtest-sha256.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sha256) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sha256.svg)](https://travis-ci.org/npmtest/node-npmtest-sha256)
+#### basic test coverage for  [sha256 (v0.2.0)](https://github.com/cryptocoinjs/sha256)  [![npm package](https://img.shields.io/npm/v/npmtest-sha256.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sha256) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sha256.svg)](https://travis-ci.org/npmtest/node-npmtest-sha256)
 
 #### Compute SHA256 of bytes or strings.
 
@@ -35,9 +35,26 @@
 ```json
 
 {
-    "name": "sha256",
-    "version": "0.2.0",
+    "browser": "./lib/sha256.js",
+    "bugs": {
+        "url": "https://github.com/cryptocoinjs/sha256/issues"
+    },
+    "dependencies": {
+        "convert-hex": "~0.1.0",
+        "convert-string": "~0.1.0"
+    },
     "description": "Compute SHA256 of bytes or strings.",
+    "devDependencies": {
+        "mocha": "1.*",
+        "terst": "0.0.1"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "73a0b418daab7035bff86e8491e363412fc2ab05",
+        "tarball": "https://registry.npmjs.org/sha256/-/sha256-0.2.0.tgz"
+    },
+    "gitHead": "fadfc62b13052bd0ea3d0030f618d4a35eed61dc",
+    "homepage": "https://github.com/cryptocoinjs/sha256",
     "keywords": [
         "string",
         "strings",
@@ -45,23 +62,32 @@
         "bytes",
         "cryptography"
     ],
-    "devDependencies": {
-        "mocha": "1.*",
-        "terst": "0.0.1"
-    },
-    "repository": {
-        "url": "https://github.com/cryptocoinjs/sha256",
-        "type": "git"
-    },
     "main": "./lib/nodecrypto.js",
-    "browser": "./lib/sha256.js",
-    "dependencies": {
-        "convert-hex": "~0.1.0",
-        "convert-string": "~0.1.0"
+    "maintainers": [
+        {
+            "name": "vbuterin"
+        },
+        {
+            "name": "midnightlightning"
+        },
+        {
+            "name": "sidazhang"
+        },
+        {
+            "name": "jprichardson"
+        }
+    ],
+    "name": "sha256",
+    "optionalDependencies": {},
+    "repository": {
+        "url": "git+https://github.com/cryptocoinjs/sha256.git",
+        "type": "git"
     },
     "scripts": {
         "test": "mocha"
-    }
+    },
+    "version": "0.2.0",
+    "bin": {}
 }
 ```
 
